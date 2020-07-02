@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script>
+            function login_fuc(){
+               var inputusername=document.getElementById("input_username").value;
+               var inputpassword=document.getElementById("input_password").value;
+               if(inputusername==""||inputusername==null){
+                    document.getElementById("no_user_info").style.display="";
+                    document.getElementById("username_error_info").style.display="none";
+                    document.getElementById("no_password_info").style.display="none";
+                    document.getElementById("password_error_info").style.display="none";
+                   if(inputpassword==""||inputpassword==null){
+                    document.getElementById("no_user_info").style.display="";
+                    document.getElementById("username_error_info").style.display="none";
+                    document.getElementById("no_password_info").style.display="";
+                    document.getElementById("password_error_info").style.display="none";
+                   }
+               }else if(inputpassword==""||inputpassword==null){
+                    document.getElementById("no_user_info").style.display="none";
+                    document.getElementById("username_error_info").style.display="none";
+                    document.getElementById("no_password_info").style.display="";
+                    document.getElementById("password_error_info").style.display="none";
+               }else{
+                    if(inputusername!="liuyu"){
+                        document.getElementById("no_user_info").style.display="none";
+                        document.getElementById("username_error_info").style.display="";
+                        document.getElementById("no_password_info").style.display="none";
+                        document.getElementById("password_error_info").style.display="none";
+                    }else if(inputpassword!=1652271){
+                        document.getElementById("no_user_info").style.display="none";
+                        document.getElementById("username_error_info").style.display="none";
+                        document.getElementById("no_password_info").style.display="none";
+                        document.getElementById("password_error_info").style.display="";
+                    }else{
+                        window.location.href="../settings/settings.html";
+                    }
+               }
+            }
+        </script>
+     </head>
+
+    <body>
+        <div id="login_frame" class="container-fluid">
+            <div id="login_box" class="jumbotron">
+                <div id="row_logo_img">
+                    <img id="logo_img" src="images/icon_signin_line.png" alt="logo" class="img-fluid">
+                </div>
+                <div id="login_section">
+                    <div id="username">
+                        <span id="user_img">
+                                <img src="images/user.png" alt="user_img" width="30" height="30">
+                        </span>
+                        <input id="input_username" type="text" placeholder="username">
+                        <div class="error">
+                                <p id="no_user_info" style="display:none" class="warn">
+                                    <span class="text-danger"><small>plesae input username</small></span>
+                                </p>
+                                <p id="username_error_info" style="display:none" class="warn">
+                                        <span class="text-danger"><small>error username</small></span>
+                                    </p>
+                        </div>
+                    </div>
+                    <div id="password">
+                            <span id="password_img">
+                                    <img src="images/password.png" alt="password_img" width="30" height="30">
+                            </span>
+                            <input id="input_password" type="password" value placeholder="password">
+                            <div class="error">
+                                    <p id="no_password_info" style="display:none" class="warn">
+                                        <span class="text-danger"><small>please input password</small></span>
+                                    </p>
+                                    <p id="password_error_info" style="display:none" class="warn">
+                                            <span class="text-danger"><small>error password</small></span>
+                                        </p>
+                            </div>
+                    </div>
+                    <div id="row_forget_password">
+                        <span class="link">
+                            <a id="forget_password" href="forget_password.html">Forget Password?</a>
+                        </span>
+                    </div>
+                    <div id="row_login_button">
+                        <button id="login_button" class="btn btn-primary" onclick="login_fuc()">LOGIN</button>
+                    </div>
+                    <div id="row_creat_new_account">
+                        <button id="creat_new_account_button" class="btn btn-primary" onclick="window.location.href='sign_up.html'">CREAT NEW ACCOUNT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

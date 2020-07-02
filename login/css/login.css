@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+}
+#login_box{
+    text-align: center;
+    margin: 0 auto;
+    width:300px;
+    height:auto;
+}
+#row_logo_img{
+    margin-bottom: 20px;
+}
+#logo_img{
+    width: 25%;
+    height: 25%;
+}
+#login_button{
+    width: 75%;
+}
+#creat_new_account_button{
+    width: 75%;
+}
+#username{
+    margin-bottom: 20px;
+}
+#password{
+    margin-bottom: 20px;
+}
+#row_forget_password{
+    margin-bottom: 20px;
+}
+#row_login_button{
+    margin-bottom: 20px;
+}
+#row_creat_new_account{
+    margin-bottom: 20px;
+}

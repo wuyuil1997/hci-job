@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SETTINGS</title>
+        <link rel="stylesheet" type="text/css" href="css/settings.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="settings_icon" class="row">
+                <div class="col-6">
+                        <img id="settings_img" src="images/settings.png" alt="settings_img" width="30" height="30">
+                        <span><strong>SETTINGS</strong></span>
+                        
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary float-right">Done</button>
+                </div>
+            </div>
+            <div id="settings_box" class="row">
+                <div class="col-12">
+                        <ul class="nav nav-pills">
+                                <li class="nav-item" style="width:120px;text-align: center;">
+                                    <a class="nav-link active" data-toggle="pill" href="#tab1">Preferences</a>
+                                </li>
+                                <li class="nav-item" style="width:120px;text-align: center;">
+                                        <a class="nav-link" data-toggle="pill" href="#tab2">Theme</a>
+                                </li>
+                                <li class="nav-item" style="width:120px;text-align: center;">
+                                        <a class="nav-link" data-toggle="pill" href="#tab3">Backup</a>
+                                </li>
+                                <li class="nav-item" style="width:120px;text-align: center;">
+                                        <a class="nav-link" data-toggle="pill" href="#tab4">Profile</a>
+                                </li>
+                            </ul>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="container tab-pane active">
+                        <div id="languages_set" class="row" style="margin-top:5px;">
+                            <div class="col-sm-4" style="margin-left: 15%;"><strong>Languages</strong></div>
+                            <div class="col-sm-4" style="margin-left: 15%;">
+                                <select class="combobox">
+                                    <option value="English">English</option>
+                                    <option value="china">简体中文</option>
+                                    <option value="italiano">Italiano</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <span class="col-12" style="margin-left:10%"><strong>Date & Time</strong></span>
+                        </div>
+                        <div id="date_time" class="row">
+                                <div class="col-sm-4" style="margin-left: 15%;margin-top:5px;"><strong>Time format</strong></div>
+                                <div class="col-sm-4" style="margin-left: 15%;margin-top:5px;">
+                                    <select class="combobox">
+                                        <option value="24h">24-hour-format</option>
+                                        <option value="12h">12-hour-format</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4" style="margin-left: 15%;margin-top:5px;"><strong>Start week on</strong></div>
+                                <div class="col-sm-4" style="margin-left: 15%;margin-top:5px;">
+                                    <select class="combobox">
+                                        <option value="sun">Sunday</option>
+                                        <option value="mon">Monday</option>
+                                        <option value="tue">Tuesday</option>
+                                        <option value="wed">Wednesday</option>
+                                        <option value="thurs">Thursday</option>
+                                        <option value="fri">Friday</option>
+                                        <option value="sat">Saturday</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4" style="margin-left: 15%;margin-top:5px;"><strong>Daily alert time</strong></div>
+                                <div class="col-sm-4" style="margin-left: 15%;margin-top:5px;">
+                                    <select class="combobox">
+                                        <option value="time">09:00</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div id="reset" class="row">                               
+                                <div class="row_left" style="margin-bottom: 15px">
+                                    <button type="button" class="btn btn-primary active">Reset default</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="container tab-pane">
+                        <div id="series_name" class="row">
+                            <div class="col-sm-12" style="margin-left:15%">
+                                <span><strong>Series One</strong></span>
+                            </div>
+                        </div>
+                        <div id="series_one" class="row" style="margin-left:15%">
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/pic1.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 1</strong></span>
+                            </div>
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/pic2.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 2</strong></span>
+                            </div>
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/pic3.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 3</strong></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="series_name" class="row">
+                            <div class="col-sm-12" style="margin-left:15%">
+                                <span><strong>Series Two</strong></span>
+                            </div>
+                        </div>
+                        <div id="series_two" class="row" style="margin-left:15%">
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/pic4.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 1</strong></span>
+                            </div>
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/pic5.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 2</strong></span>
+                            </div>
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/pic7.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 3</strong></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="series_name" class="row">
+                            <div class="col-sm-12" style="margin-left:15%">
+                                <span><strong>Series Three</strong></span>
+                            </div>
+                        </div>
+                        <div id="series_three" class="row" style="margin-left:15%">
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/background.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 1</strong></span>
+                            </div>
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/background.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 2</strong></span>
+                            </div>
+                            <div class="col-sm-4" style="text-align:center">
+                                <img src="images/background.png" alt="theme one" width="100px" height="100px">
+                                <span><strong>Theme 3</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="container tab-pane">
+                       <div id="back_up" class="row">
+                        <div class="col-sm-12" style="margin-left:15%;margin-bottom: 5px;">
+                            <span><strong>Backup & Restore</strong></span>
+                        </div>
+                       </div>
+                       <div id="back_up" class="row">
+                        <div class="col-sm-4" style="margin-left:15%;margin-bottom: 5px">
+                            <button type="button" class="btn btn-primary float-left" style="width:200px">Generate Backup</button>
+                        </div>
+                        <div class="col-sm-4" style="margin-left:15%;margin-bottom: 5px">
+                            <button type="button" class="btn btn-primary float-left" style="width:200px">Import Backup</button>
+                        </div>
+                       </div>
+                       <hr>
+                       <div class="row">
+                           <div class="col" style="margin-left:15%;margin-bottom: 5px;">
+                                <span><small> You can back up your TickTick data and export as a CSV file, which contains all the lists, tasks, checklists, reminders etc.</small></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div id="tab4" class="container tab-pane">
+                            <div id="user_info" class="row" align="center">
+                                    <div class="col-sm-4" style="margin-left:15%;margin-bottom: 5px;">
+                                        <img src="images/myavatar.png" alt="user_avatar" style="border-radius:50%" width="100px" height="100px" >
+                                    </div>
+                                    <div class="col-sm-4" style="margin-left:15%;margin-top:50px;margin-bottom: 5px;">
+                                        <span><strong>Username</strong></span>
+                                    </div>
+                            </div>
+                            <hr>
+                                   <div id="user_email" class="row" align="center">
+                                    <div class="col-sm-4" style="margin-left:15%;margin-bottom: 5px">
+                                            <span><strong>Email</strong></span>
+                                    </div>
+                                    <div class="col-sm-4" style="margin-bottom: 5px">
+                                            <a class="link" href="login.html">Set Up Email</a>
+                                    </div>
+                                   </div>
+                                   <div class="rows" style="margin-top:10px;margin-bottom:10px;text-align: center;">
+                                        <a>xx Tasks</a> | <a>xx Completed</a>
+                                    </div>
+                                    <div class="row" style="margin-top:10px;margin-bottom:10px;" align="center">
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-primary">Delete account</button>
+                                        </div>
+                                    </div>
+                                   <hr>
+                                   <div class="row">
+                                       <div class="col" style="margin-left:15%;margin-bottom: 5px;">
+                                            <span><small>You can change your avatar in this interface, set up your mailbox and see the completion of your tasks.</small></span>
+                                       </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

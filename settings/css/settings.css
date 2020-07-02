@@ -1,0 +1,30 @@
+#settings_box{
+    margin-left: 8.3%;
+    margin-right: 8.3%;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+#settings_icon{
+    margin-top: 8.3%;
+    margin-left: 8.3%;
+    margin-right: 8.3%;
+}
+.row_left{
+    float: left;
+    width: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.row_right{
+    float: right;
+    width: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.h-divider{
+    margin-top:5px;
+    margin-bottom:5px;
+    height:1px;
+    width:100%;
+    border-top:1px solid gray;
+   }
